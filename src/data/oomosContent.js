@@ -98,18 +98,21 @@ export const products = [
     ],
   },
   {
+    slug: 'ripple-dress',
     name: 'Shell Jacket',
     material: 'Wool cotton',
     price: 'RMB 8,900',
     image: 'pleat-08.jpg',
   },
   {
+    slug: 'ripple-dress',
     name: 'Sea Mist Tank',
     material: 'Linen cotton',
     price: 'RMB 3,900',
     image: 'seaing-04.jpg',
   },
   {
+    slug: 'ripple-dress',
     name: 'Pleat Skirt',
     material: 'Soft yarn',
     price: 'RMB 5,200',

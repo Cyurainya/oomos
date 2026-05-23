@@ -360,34 +360,30 @@ h2 {
 
 .collection-grid {
   display: grid;
-  gap: 12px;
+  gap: clamp(30px, 4vw, 64px);
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0 auto;
   max-width: 1400px;
 }
 
 .collection-tile {
-  border: 1px solid rgba(31, 26, 21, 0.16);
+  background: transparent;
+  border: 0;
   color: var(--paper);
   display: grid;
-  min-height: 660px;
+  gap: 18px;
+  min-height: 0;
   overflow: hidden;
   position: relative;
   text-decoration: none;
 }
 
 .collection-tile::after {
-  background:
-    linear-gradient(rgba(31, 26, 21, 0.04), rgba(31, 26, 21, 0.58)),
-    linear-gradient(0deg, rgba(107, 38, 48, 0.16), rgba(107, 38, 48, 0));
-  content: '';
-  inset: 0;
-  position: absolute;
-  transition: opacity 700ms ease;
+  content: none;
 }
 
 .collection-tile:hover::after {
-  opacity: 0.74;
+  opacity: 0;
 }
 
 .collection-tile img,
@@ -410,6 +406,11 @@ h2 {
   transition: transform 1200ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.collection-tile img {
+  aspect-ratio: 4 / 5;
+  height: auto;
+}
+
 .collection-tile:hover img,
 .product-card:hover img,
 .detail-frame:hover img,
@@ -418,18 +419,21 @@ h2 {
 }
 
 .collection-tile span {
-  align-self: end;
+  bottom: 28px;
   display: grid;
   gap: 10px;
-  padding: 30px;
-  position: relative;
+  left: 28px;
+  max-width: calc(100% - 56px);
+  padding: 0;
+  position: absolute;
+  text-shadow: 0 8px 28px rgba(31, 26, 21, 0.42);
   transform: translateY(6px);
   transition: transform 700ms ease;
   z-index: 1;
 }
 
 .collection-tile span::before {
-  background: var(--gild);
+  background: rgba(255, 246, 231, 0.72);
   content: '';
   height: 1px;
   width: 42px;
@@ -445,8 +449,8 @@ h2 {
 }
 
 .collection-tile small {
-  color: rgba(243, 234, 219, 0.78);
-  opacity: 0.78;
+  color: rgba(255, 246, 231, 0.82);
+  opacity: 1;
   text-transform: uppercase;
 }
 
@@ -493,45 +497,40 @@ h2 {
 }
 
 .detail-reel {
-  background:
-    linear-gradient(180deg, rgba(74, 44, 31, 0.1), rgba(255, 255, 255, 0)),
-    var(--paper);
+  background: transparent;
   display: grid;
-  gap: 18px;
+  gap: clamp(24px, 3.2vw, 52px);
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding: 106px 28px 88px;
+  margin: 0 auto;
+  max-width: 1460px;
+  padding: 118px 8vw 92px;
 }
 
 .detail-frame {
-  aspect-ratio: 4 / 5.35;
-  background: rgba(255, 251, 241, 0.3);
-  border: 1px solid rgba(31, 26, 21, 0.2);
+  aspect-ratio: auto;
+  background: transparent;
+  border: 0;
   color: var(--ink);
+  display: grid;
+  gap: 18px;
   margin: 0;
-  overflow: hidden;
-  padding: 10px;
+  overflow: visible;
+  padding: 0;
   position: relative;
 }
 
 .detail-frame::before {
-  border: 1px solid rgba(243, 234, 219, 0.58);
+  background: rgba(107, 38, 48, 0.44);
   content: '';
-  inset: 10px;
-  pointer-events: none;
-  position: absolute;
-  z-index: 2;
+  height: 1px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 42px;
 }
 
 .detail-frame::after {
-  background: linear-gradient(rgba(243, 234, 219, 0), rgba(243, 234, 219, 0.82));
-  bottom: 10px;
-  content: '';
-  height: 32%;
-  left: 10px;
-  pointer-events: none;
-  position: absolute;
-  right: 10px;
-  z-index: 1;
+  content: none;
 }
 
 .detail-frame:nth-child(2) {
@@ -543,19 +542,19 @@ h2 {
 }
 
 .detail-frame img {
-  filter: sepia(0.22) saturate(0.78) contrast(0.98);
+  aspect-ratio: 4 / 5.2;
+  filter: sepia(0.12) saturate(0.92) contrast(1);
+  height: auto;
 }
 
 .detail-frame figcaption {
-  bottom: 30px;
+  color: #2c241b;
   font-family: var(--display);
-  font-size: 38px;
+  font-size: clamp(34px, 3.2vw, 56px);
   font-weight: 300;
-  left: 30px;
   line-height: 1;
-  position: absolute;
-  text-shadow: 0 1px 12px rgba(247, 244, 238, 0.42);
-  z-index: 3;
+  position: static;
+  text-shadow: none;
 }
 
 .quiet-divider {
@@ -1401,7 +1400,7 @@ h2 {
   }
 
   .collection-tile {
-    min-height: 520px;
+    min-height: 0;
   }
 
   .atelier-block,
@@ -1411,7 +1410,7 @@ h2 {
   }
 
   .detail-frame {
-    aspect-ratio: 4 / 4.7;
+    aspect-ratio: auto;
   }
 
   .detail-frame:nth-child(2),
@@ -1553,7 +1552,7 @@ h2 {
   }
 
   .collection-tile {
-    min-height: 430px;
+    min-height: 0;
   }
 
   .collection-tile strong,
@@ -1562,7 +1561,7 @@ h2 {
   }
 
   .collection-tile span {
-    padding: 22px;
+    padding: 0;
   }
 
   .product-image {
