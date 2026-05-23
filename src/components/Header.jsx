@@ -1,8 +1,8 @@
-import { navItems } from '../data/oomosContent'
+import { navItems } from '../data/osmosContent'
 
 export function Header({ menuOpen, onMenuToggle }) {
   return (
-    <header className="site-header" aria-label="oomos primary navigation">
+    <header className="site-header" aria-label="osmos primary navigation">
       <button
         className="menu-toggle"
         type="button"
@@ -22,11 +22,11 @@ export function Header({ menuOpen, onMenuToggle }) {
         ))}
       </nav>
 
-      <a className="brand-mark" href="#top" aria-label="oomos home">
-        oomos
+      <a className="brand-mark" href="#top" aria-label="osmos home">
+        osmos
       </a>
 
-      <a className="header-action" href="mailto:atelier@oomos.com">
+      <a className="header-action" href="mailto:atelier@osmos.com">
         Appointment
       </a>
     </header>

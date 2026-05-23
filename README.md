@@ -1,6 +1,6 @@
-# oomos Atelier
+# osmos Atelier
 
-Editorial React landing page for oomos, a small-edition knitwear atelier.
+Editorial React landing page for osmos, a small-edition knitwear atelier.
 
 ## Stack
 

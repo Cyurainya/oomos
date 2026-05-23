@@ -70,7 +70,7 @@ export function ProductDetailPage({ product }) {
             {added ? 'Added to bag' : 'Add to Bag'}
           </button>
 
-          <a className="appointment-link" href="mailto:atelier@oomos.com">
+          <a className="appointment-link" href="mailto:atelier@osmos.com">
             Book a private fitting
           </a>
         </aside>

@@ -1,8 +1,8 @@
 {
-  "name": "oomos-atelier",
+  "name": "osmos-atelier",
   "private": true,
   "version": "1.0.0",
-  "description": "Editorial React landing page for oomos knit atelier.",
+  "description": "Editorial React landing page for osmos knit atelier.",
   "type": "module",
   "scripts": {
     "dev": "vite",

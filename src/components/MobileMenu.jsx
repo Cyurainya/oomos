@@ -1,4 +1,4 @@
-import { navItems } from '../data/oomosContent'
+import { navItems } from '../data/osmosContent'
 
 export function MobileMenu({ isOpen, onClose }) {
   return (
@@ -9,7 +9,7 @@ export function MobileMenu({ isOpen, onClose }) {
             {item.label}
           </a>
         ))}
-        <a href="mailto:atelier@oomos.com" onClick={onClose}>
+        <a href="mailto:atelier@osmos.com" onClick={onClose}>
           Appointment
         </a>
       </nav>

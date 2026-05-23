@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { products } from '../data/oomosContent'
+import { products } from '../data/osmosContent'
 
 const getProductSlugFromHash = () => {
   if (typeof window === 'undefined') {

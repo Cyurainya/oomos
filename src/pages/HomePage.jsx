@@ -1,5 +1,5 @@
 import { asset } from '../lib/assets'
-import { collections, details, principles, products } from '../data/oomosContent'
+import { collections, details, principles, products } from '../data/osmosContent'
 
 export function HomePage() {
   return (
@@ -17,7 +17,7 @@ export function HomePage() {
         <div className="hero-shade"></div>
         <div className="hero-copy">
           <p className="eyebrow">SS26 / Still Water</p>
-          <h1 id="hero-title">oomos</h1>
+          <h1 id="hero-title">osmos</h1>
           <p className="hero-line">Quiet knitwear, slowly made.</p>
           <a className="text-link light-link" href="#collections">
             Explore
@@ -25,7 +25,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="intro-section" aria-label="oomos essence" data-reveal>
+      <section className="intro-section" aria-label="osmos essence" data-reveal>
         <p>Light. Thread. Water. Skin.</p>
       </section>
 
@@ -77,7 +77,7 @@ function AtelierSection() {
         </a>
       </div>
       <div className="atelier-media" data-reveal>
-        <img src={asset('pleat-02.jpg')} alt="oomos textile detail" />
+        <img src={asset('pleat-02.jpg')} alt="osmos textile detail" />
       </div>
     </section>
   )
@@ -85,7 +85,7 @@ function AtelierSection() {
 
 function MaterialStudies() {
   return (
-    <section className="detail-reel" aria-label="oomos material studies">
+    <section className="detail-reel" aria-label="osmos material studies">
       {details.map((detail) => (
         <figure className="detail-frame" data-reveal key={detail.label}>
           <img src={asset(detail.image)} alt={`${detail.label} material study`} />
@@ -140,7 +140,7 @@ function ProductCard({ product }) {
 
 function MotionSection() {
   return (
-    <section className="motion-section" aria-label="oomos campaign film">
+    <section className="motion-section" aria-label="osmos campaign film">
       <video
         src={asset('motion-02.mp4')}
         autoPlay
@@ -173,14 +173,14 @@ function PrinciplesSection() {
 function VisitSection() {
   return (
     <section className="visit-section" id="visit" data-reveal>
-      <img src={asset('seaing-03.jpg')} alt="oomos coastal campaign" />
+      <img src={asset('seaing-03.jpg')} alt="osmos coastal campaign" />
       <div>
         <p className="eyebrow">Private Appointment</p>
         <h2>Visit</h2>
         <p>地址：上海市静安区富民路 183 号 3F。</p>
         <p>Wed - Sun / 12:00 - 19:00</p>
-        <a className="text-link" href="mailto:atelier@oomos.com">
-          atelier@oomos.com
+        <a className="text-link" href="mailto:atelier@osmos.com">
+          atelier@osmos.com
         </a>
       </div>
     </section>
