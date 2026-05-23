@@ -151,7 +151,7 @@ function MotionSection() {
       />
       <div className="motion-copy" data-reveal>
         <p className="eyebrow">In Motion</p>
-        <h2 className="ornate-title">当技艺与机械共织</h2>
+        <h2 className="ornate-title">Art Meets Mechanism</h2>
       </div>
     </section>
   )
